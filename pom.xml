@@ -15,8 +15,29 @@
 	<description>jmc</description>
 	<properties>
 		<java.version>16</java.version>
+        <jmc.version>8.0.1</jmc.version>
 	</properties>
 	<dependencies>
+        <dependency>
+            <groupId>org.openjdk.jmc</groupId>
+            <artifactId>common</artifactId>
+            <version>${jmc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmc</groupId>
+            <artifactId>flightrecorder</artifactId>
+            <version>${jmc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmc</groupId>
+            <artifactId>flightrecorder.rules</artifactId>
+            <version>${jmc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jmc</groupId>
+            <artifactId>flightrecorder.rules.jdk</artifactId>
+            <version>${jmc.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
